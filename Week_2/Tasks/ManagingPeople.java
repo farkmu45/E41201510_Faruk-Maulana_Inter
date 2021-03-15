@@ -1,8 +1,8 @@
-package Week_2;
-
 /**
  * ManagingPeople
  */
+package Week_2.Tasks;
+
 public class ManagingPeople {
 
     public static void main(String[] args) {

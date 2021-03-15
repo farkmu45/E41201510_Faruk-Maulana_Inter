@@ -1,7 +1,7 @@
 /**
  * Person
  */
-package Week_2;
+package Week_2.Tasks;
 
 public class Person {
 
