@@ -1,4 +1,4 @@
-package Week_1;
+package Week_2;
 
 /**
  * ManagingPeople
