@@ -7,6 +7,7 @@ import Week_3.Tasks.StringAlignUtils.Alignment;
 public class PointD {
     public static void main(String[] args) {
         String customer;
+        String[] prizes = { "1 buah mug cantik", "2 voucher game", "1 voucher diskon" };
 
         Scanner input = new Scanner(System.in);
         int totalPrice = 0;
@@ -29,8 +30,12 @@ public class PointD {
 
         input.close();
         System.out.println("\nTotal pembelian atas nama " + customer + " adalah Rp " + totalPrice);
-        System.out.println("Selamat...");
-        System.out.println("Anda mendapat hadiah 1 buah mug cantik");
+
+        if (totalPrice >= 10000) {
+            System.out.println("Selamat...");
+            System.out.println("Anda mendapat hadiah " + prizes[(int) (Math.random() * 2) + 0]);
+        }
+
         System.out.println("---------------------------------------------");
 
         System.out.print(alignCenter.format("Terima Kasih"));
