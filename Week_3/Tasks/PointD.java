@@ -27,6 +27,7 @@ public class PointD {
             totalPrice += input.nextInt();
         }
 
+        input.close();
         System.out.println("\nTotal pembelian atas nama " + customer + " adalah Rp " + totalPrice);
         System.out.println("Selamat...");
         System.out.println("Anda mendapat hadiah 1 buah mug cantik");

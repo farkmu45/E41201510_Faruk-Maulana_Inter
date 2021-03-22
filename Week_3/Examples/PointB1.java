@@ -10,6 +10,7 @@ public class PointB1 {
 
         System.out.print("Inputkan nilai: ");
         nilai = scan.nextInt();
+        scan.close();
 
         if (nilai >= 90) {
             grade = "A";

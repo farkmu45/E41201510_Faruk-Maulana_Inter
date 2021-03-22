@@ -9,6 +9,7 @@ public class PointB {
 
         System.out.print("Masukkan jumlah deret : ");
         numberOfRows = input.nextInt();
+        input.close();
 
         int[] randomArray = new int[numberOfRows];
 
@@ -19,5 +20,6 @@ public class PointB {
         for (int number : randomArray) {
             System.out.print(number + " ");
         }
+
     }
 }

@@ -10,6 +10,7 @@ public class Prak_Scanner {
         int nilai1 = s1.nextInt();
         System.out.print("Masukkan nilai2 = ");
         int nilai2 = s1.nextInt();
+        s1.close();
 
         int jumlah = nilai1 + nilai2;
         System.out.println("Jumlah = " + jumlah);

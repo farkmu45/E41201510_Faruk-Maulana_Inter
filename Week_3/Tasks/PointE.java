@@ -31,7 +31,7 @@ public class PointE {
 
         System.out.print("\nSilahkan masukkan pilihan anda : ");
         choice = input.nextInt();
-
+        input.close();
         System.out.println("Minuman yang anda pesan adalah " + menu[choice - 1]);
         System.out.println("Pesanan akan segera kami antar");
         System.out.println("Terima kasih " + customer + " telah berkunjung di Cafe Ceria");

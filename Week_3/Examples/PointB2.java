@@ -9,6 +9,7 @@ public class PointB2 {
 
         System.out.print("Inputkan nama warna: ");
         lampu = scan.nextLine();
+        scan.close();
 
         switch (lampu) {
         case "merah":
@@ -24,5 +25,6 @@ public class PointB2 {
             System.out.println("Warna lampu salah!");
             break;
         }
+
     }
 }
