@@ -17,7 +17,7 @@ public class PointA {
         input.close();
 
         for (int i = startLimit; i <= endLimit; i++) {
-            if (i % 2 == 0 && i > 0) {
+            if (i % 2 == 0) {
                 System.out.print(i + " ");
             }
         }
