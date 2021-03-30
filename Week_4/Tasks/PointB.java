@@ -7,6 +7,7 @@ public class PointB {
     public static void main(String[] args) {
         StringAlignUtils alignCenter = new StringAlignUtils(30, Alignment.CENTER);
         String numbers = "";
+        String numbers2 = "";
 
         System.out.print(alignCenter.format("Do_While"));
 
@@ -18,6 +19,11 @@ public class PointB {
             numbers = numbers + i + "  ";
         }
 
+        for (int i = 0; i < 100; i+=2) {
+            numbers2 = numbers2 + i + "  ";
+        }
+
         System.out.print(alignCenter.format(numbers));
+        System.out.print(alignCenter.format(numbers2));
     }
 }
