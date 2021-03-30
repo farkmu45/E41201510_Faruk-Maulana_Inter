@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class PointB {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int numberOfRows;
+        int arrayLength;
 
         System.out.print("Masukkan jumlah deret : ");
-        numberOfRows = input.nextInt();
+        arrayLength = input.nextInt();
         input.close();
 
-        int[] randomArray = new int[numberOfRows];
+        int[] randomNumbers = new int[arrayLength];
 
-        for (int i = 0; i < randomArray.length; i++) {
-            randomArray[i] = (int) (Math.random() * 100) + 1;
+        for (int i = 0; i < randomNumbers.length; i++) {
+            randomNumbers[i] = (int) (Math.random() * 100) + 1;
         }
 
-        for (int number : randomArray) {
+        for (int number : randomNumbers) {
             System.out.print(number + " ");
         }
 
