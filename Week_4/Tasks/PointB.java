@@ -1,7 +1,7 @@
 package Week_4.Tasks;
 
-import Week_3.Tasks.StringAlignUtils;
-import Week_3.Tasks.StringAlignUtils.Alignment;
+import Utils.StringAlignUtils;
+import Utils.StringAlignUtils.Alignment;
 
 public class PointB {
     public static void main(String[] args) {
@@ -24,6 +24,7 @@ public class PointB {
         }
 
         System.out.print(alignCenter.format(numbers));
+        System.out.println();
         System.out.print(alignCenter.format(numbers2));
     }
 }
