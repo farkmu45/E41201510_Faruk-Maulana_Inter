@@ -2,7 +2,8 @@ package Week_3.Tasks;
 
 import java.util.Scanner;
 
-import Week_3.Tasks.StringAlignUtils.Alignment;
+import Utils.StringAlignUtils;
+import Utils.StringAlignUtils.Alignment;
 
 public class PointD {
     public static void main(String[] args) {

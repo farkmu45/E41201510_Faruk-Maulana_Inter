@@ -2,7 +2,8 @@ package Week_3.Tasks;
 
 import java.util.Scanner;
 
-import Week_3.Tasks.StringAlignUtils.Alignment;
+import Utils.StringAlignUtils;
+import Utils.StringAlignUtils.Alignment;
 
 public class PointE {
     public static void main(String[] args) {
@@ -18,11 +19,10 @@ public class PointE {
 
         System.out.println("--------------------");
         System.out.print(alignCenter.format("SPECIAL MENU :"));
-        System.out.println("  1. Soft Drinks");
-        System.out.println("  2. Mix Juice");
-        System.out.println("  3. Nescafe");
-        System.out.println("  4. Soda Milk");
-        System.out.println("  5. Tea");
+
+        for (int i = 0; i < menu.length; i++) {
+            System.out.println("  "+(i+1) + ". "+menu[i]);
+        }
 
         System.out.println("--------------------");
 

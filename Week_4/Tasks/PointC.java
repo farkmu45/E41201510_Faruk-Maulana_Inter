@@ -1,10 +1,10 @@
 package Week_4.Tasks;
 
-import java.util.Scanner;
+import Utils.Input;
 
 public class PointC {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Input input= new Input();        
 
         int lowestScore = 0;
         int highestScore = 0;
@@ -13,14 +13,14 @@ public class PointC {
 
         System.out.print("Masukkan banyaknya data nilai = ");
 
-        numberOfScore = input.nextInt();
+        numberOfScore = input.getNumber(0);
 
         int[] scores = new int[numberOfScore];
 
         for (int i = 0; i < scores.length; i++) {
 
             System.out.print("Masukkan data nilai ke-" + (i + 1) + " = ");
-            scores[i] = input.nextInt();
+            scores[i] = input.getNumber(0, 100);
 
             if (i == 0) {
                 lowestScore = scores[i];
@@ -35,8 +35,6 @@ public class PointC {
 
             total += scores[i];
         }
-
-        input.close();
 
         System.out.println("Nilai minimum = " + lowestScore);
         System.out.println("Nilai maksimum = " + highestScore);
