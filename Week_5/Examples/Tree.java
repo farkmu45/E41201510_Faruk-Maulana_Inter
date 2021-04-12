@@ -11,13 +11,12 @@ public class Tree {
 
     public Node find(int key) {
         Node current = root;
-        while (key < current.id) {
+        while (current.id != key) {
             if (key < current.id) {
                 current = current.leftChild;
             } else {
                 current = current.rightChild;
             }
-
             if (current == null) {
                 return null;
             }
@@ -95,7 +94,7 @@ public class Tree {
             if (current == root) {
                 root = current.rightChild;
             } else if (isLeftChild) {
-                current.leftChild = current.rightChild;
+                parent.leftChild = current.rightChild;
             } else {
                 parent.rightChild = current.rightChild;
             }
@@ -183,7 +182,7 @@ public class Tree {
         globalStack.push(root);
         int nBlanks = 32;
         boolean isRowEmpty = false;
-        System.out.println(".............................");
+        System.out.println("...............................................................");
         while (isRowEmpty == false) {
             Stack localStack = new Stack();
             isRowEmpty = true;
@@ -221,7 +220,7 @@ public class Tree {
             }
         }
 
-        System.out.println(".............................");
+        System.out.println("...............................................................");
     }
 
 }
